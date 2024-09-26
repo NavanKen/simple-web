@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d6eff4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+nav {
+  background-color: #212121;
+  padding: 2rem 3rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 999;
+}
+
+.logo {
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding-left: 0;
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: white;
+  padding: 10px;
+  transition: 0.1s ease-in-out;
+}
+
+.menu li a:hover {
+  color: #555;
+}
+
+.tombol {
+  display: none;
+  color: whitesmoke;
+  font-size: 20px;
+  transition: 0.1s ease-in-out;
+}
+
+.tombol:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+/* Home */
+
+.welcome {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Gambar/anime.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.welcome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 3%,
+    rgba(255, 255, 255, 0) 25%
+  );
+}
+
+.welcome-text {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  position: relative;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", system-ui;
+}
+
+.welcome-text h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.welcome-text p {
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: rgb(0, 110, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+  transition: 0.1s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: wheat;
+}
+
+/* Home End */
+
+/* Tentang */
+.tentang-container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 50%;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.img-container {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.text-container {
+  flex: 1;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* About End */
+
+.produk-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.produk-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.produk-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.produk-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.produk-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.produk-card h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.produk-card p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.produk-card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+/* Tentang End */
+
+/* Kontak */
+.contact-section {
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+  height: 100vh;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", system-ui;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contat-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px 50px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.layanan-section {
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.layanan-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.layanan-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  overflow-x: auto;
+}
+
+.layanan-table th,
+.layanan-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.layanan-table th {
+  background-color: #1136fc;
+  color: white;
+}
+
+.layanan-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.layanan-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.layanan-table td {
+  font-size: 1rem;
+}
+
+/* Kontak End */
+
+/* Responsif */
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .tombol {
+    display: block;
+  }
+
+  .menu.aktif {
+    display: inline-block;
+    position: absolute;
+    top: 64px;
+    background-color: #212121;
+    padding: 10px 20px;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+  }
+  .menu.aktif li a {
+    padding: 10px;
+    display: inline-block !important;
+    z-index: 9999;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .tentang-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-container {
+    margin-left: 0;
+    text-align: center;
+  }
+  .img-container {
+    margin-bottom: 20px;
+  }
+  .layanan-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .layanan-table th,
+  .layanan-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .layanan-section h2 {
+    font-size: 2rem;
+  }
+}
